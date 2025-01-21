@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Müzikler - Legion</title>
+  <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css">
+    <link rel="icon" type="image/png" href="/img/logov.png">
+    <link rel="stylesheet" href="/css/music.css">
+</head>
+<body>
+  <%- include('includes/header') %>
+  <main>
+    <section id="muzikler">
+      <h1 class="h1">Müziklerim</h1>
+      <p class="desc">Müziklerim Tam Halini Dinlemek İçin Üzerine Tıklayın</p>
+      <div class="music-list">
+        <div class="music-item">
+            <span class="music-title">"ANGARA" - Saz Drill Beat</span>
+            <div class="controls">
+              <button class="prev-button"><i class="fa-regular fa-angle-left"></i></button>
+              <button class="play-button"><i class="fa-regular fa-play"></i></button>
+              <button class="next-button"><i class="fa-regular fa-angle-right"></i></button>
+              <audio src="angara.mp3"></audio> 
+          </div>
+        </div>
+        <div class="music-item">
+            <span class="music-title">Ebru Gündeş - Demir Attım (Drill Remix)</span>
+            <div class="controls">
+              <button class="prev-button"><i class="fa-regular fa-angle-left"></i></button>
+              <button class="play-button"><i class="fa-regular fa-play"></i></button>
+              <button class="next-button"><i class="fa-regular fa-angle-right"></i></button>
+              <audio src="demirattim.mp3"></audio> 
+          </div>
+        </div>
+        <div class="music-item">
+            <span class="music-title">Badna Nwalee El Jaw - (Drill Remix)</span>
+            <div class="controls">
+              <button class="prev-button"><i class="fa-regular fa-angle-left"></i></button>
+              <button class="play-button"><i class="fa-regular fa-play"></i></button>
+              <button class="next-button"><i class="fa-regular fa-angle-right"></i></button>
+              <audio src="eljaw.mp3"></audio> 
+          </div>
+        </div>
+        <div class="music-item">
+          <span class="music-title">"EL TURCO" (Prod. by Legion)</span>
+          <div class="controls">
+            <button class="prev-button"><i class="fa-regular fa-angle-left"></i></button>
+            <button class="play-button"><i class="fa-regular fa-play"></i></button>
+            <button class="next-button"><i class="fa-regular fa-angle-right"></i></button>
+            <audio src="elturco.mp3"></audio> 
+        </div>
+      </div>
+
+      <div class="music-item">
+        <span class="music-title">Sherine - El Watar El Hassas (Drill Remix)</span>
+        <div class="controls">
+          <button class="prev-button"><i class="fa-regular fa-angle-left"></i></button>
+          <button class="play-button"><i class="fa-regular fa-play"></i></button>
+          <button class="next-button"><i class="fa-regular fa-angle-right"></i></button>
+          <audio src="elwatardrill.mp3"></audio> 
+      </div>
+    </div>
+    <div class="music-item">
+      <span class="music-title">Me Fal (Drill Remix)</span>
+      <div class="controls">
+        <button class="prev-button"><i class="fa-regular fa-angle-left"></i></button>
+        <button class="play-button"><i class="fa-regular fa-play"></i></button>
+        <button class="next-button"><i class="fa-regular fa-angle-right"></i></button>
+        <audio src="mefal.mp3"></audio> 
+    </div>
+  </div>
+
+  <div class="music-item">
+    <span class="music-title">Lil Jon X Uzi X Muhabbet - Schau Hin</span>
+    <div class="controls">
+      <button class="prev-button"><i class="fa-regular fa-angle-left"></i></button>
+      <button class="play-button"><i class="fa-regular fa-play"></i></button>
+      <button class="next-button"><i class="fa-regular fa-angle-right"></i></button>
+      <audio src="schauhin.mp3"></audio> 
+  </div>
+</div>
+
+</div>
+    </div>
+    </section>
+  </main>
+  <%- include('includes/footer') %>
+  <%- include('includes/scroll-button') %>
+  <script src="/js/music.js"></script>
+</body>
+</html>
