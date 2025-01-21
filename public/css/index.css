@@ -127,7 +127,7 @@
     }
 
     .header {
-        height: 450px;
+        height: 510px;
     }
 
     .header-container {
@@ -159,7 +159,7 @@
         position: absolute;
         top: 55px;
         width: calc(200px - 40px);
-        right: 0px;
+        right: 10px;
         align-items: flex-start;
         transform: translateY(-20px);
         opacity: 0;
@@ -184,7 +184,7 @@
     .tag-img {
         width: 100%;
         max-width: 550px;
-        height: auto;
+    margin-top: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -664,29 +664,33 @@ iframe {
     }
 }
 
+/* Mobilde düzeltmeler */
 @media (max-width: 768px) {
     .contact-section {
-        margin-right: 20px;
+        margin: 20px auto;
         padding: 15px;
-    }
-
-    .form-group label {
-        font-size: 12px;
     }
 
     .form-group input,
     .form-group textarea {
-        font-size: 16px;
-        padding: 10px 12px;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%; /* Mobilde genişliği tamamen doldur */
+        max-width: 100%; /* Aşırı genişliği önle */
+        min-width: unset; /* Sabit genişliklerden kurtul */
+    }
+
+    .form-group textarea {
+        max-height: unset; /* Aşırı yüksekliği kaldır */
     }
 
     .submit-btn {
         font-size: 14px;
         display: block;
-        width: 280px;
-        margin: 0 auto;
-        padding-left: 20px;
-        height: 45px;
+        width: 100%; /* Genişlik tüm alana yayılsın */
+        margin: 10px auto;
+        height: 50px;
+        padding: 0;
         text-align: center;
     }
 }
