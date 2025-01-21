@@ -77,8 +77,10 @@ footer {
     background-color: black;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    padding: 20px;
+    padding: 20px 0; /* Added 20px padding for top and bottom */
     width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 @keyframes spin {
@@ -108,24 +110,14 @@ footer {
         display: block;
     }
 
-    .legion-buttons {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: black;
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-    }
-
     .legion-buttons.active {
         display: flex;
     }
 
     .info-card {
         margin-left: 0;
+        margin-top: 135px;
+        margin-bottom: 115px;
         padding: 200px 20px 40px 20px;
     }
 
